@@ -56,3 +56,6 @@ key.properties
 credentials*.json
 service-account*.json
 .claude/settings.local.json
+
+# Belongs to a separate private project
+/supabase/functions/munim-transcribe/

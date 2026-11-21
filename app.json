@@ -7,9 +7,11 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.manaska.muse"
     },
     "android": {
+      "package": "com.manaska.muse",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +22,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "muse",
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Muse needs the microphone to capture your thoughts."
+        }
+      ],
+      "expo-router",
+      "expo-status-bar"
+    ]
   }
 }
